@@ -1,3 +1,31 @@
+
+
+:root{
+  --primary-color: #004699;
+  --secondary-color: #e0eeff;
+
+  --dark-color: #313131;
+  --dark-secondary-color: #3b3b3b;
+
+  --light-color: #ffffff;
+  --light-secondary-color: #f7f7f7;
+
+  --text-light-color: #e2e2e2;
+  --text-dark-color: #3d3d3d;
+
+  --switchSpinner: white;
+  --switch: #5f616d;
+
+  --text-color: #e2e2e2;
+
+  --bg-base-color: #ffffff;
+  --bg-base-secondary-color: #ffffff;
+
+  --red-color: #F12535;
+  --green-color: #17A550;
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +35,60 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+.light-mode {
+  background-color: var(--light-color) !important;
+  color: var(--text-dark-color) !important;
+  transition: background-color .5s;
+  --switchSpinner: #ffdd00;
+
+  --text-color: var(--text-dark-color);
+  --bg-base-color: var(--light-color);
+  --bg-base-secondary-color: var(--light-secondary-color);
+}
+.dark-mode {
+  color: var(--text-light-color) !important;
+  background-color: var(--dark-color) !important;
+  transition: background-color 1s;
+  --switchSpinner: var(--dark-color);
+
+  --text-color: var(--text-light-color);
+  --bg-base-color: var(--dark-color);
+  --bg-base-secondary-color: var(--dark-secondary-color);
+}
+
+
+.bg-sion {
+  background-color: var(--bg-base-color) !important;
+  transition: background-color .5s;
+}
+
+.input-sion {
+  background-color: var(--bg-base-color) !important;
+  transition: background-color .5s;
+  color: var(--text-color) !important;
+}
+
+.text-sion {
+  color: var(--text-color) !important;
+  transition: background-color .5s;
+}
+
+
+
+
+.btn-success {
+  background-color: var(--green-color) !important;
+  border-color: var(--green-color) !important;
+}
+
+.btn-success:hover {
+  background-color: #159e4c !important;
+  border-color: #159e4c !important;
+}
+
+.text-success {
+  color: #159e4c !important;
 }
