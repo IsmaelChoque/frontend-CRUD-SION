@@ -35,7 +35,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+/* .Toastify div div{
+  background-color: #2bbbad !important
+} */
 
 
 .light-mode {

@@ -4,7 +4,7 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: red;
+  background-color: rgb(119, 109, 212);
   display:flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@
 
 .initial-name h1 {
   font-size: 5rem;
-
+  color: #000000;
 }
 
 .show-client-data {
@@ -23,4 +23,45 @@
   border: 1px solid rgba(204, 204, 204, 0.5);
   padding: 10px;
   border-radius: 10px;
+}
+
+.sion-client-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  overflow: hidden;
+  border: 2px solid var(--primary-color);
+  padding: 2px;
+}
+
+.sion-client-image img {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+
+.sion-input-file {
+  display: none !important;
+  /* visibility: hidden; */
+}
+
+.btn-addcontainer {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+  margin-left: 80px;
+
+  /* cursor: pointer; */
+}
+
+.btn-addcontainer label {
+  cursor: pointer;
 }
